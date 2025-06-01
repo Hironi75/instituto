@@ -1,0 +1,43 @@
+@model IEnumerable<pf_final_ds2.Models.Estudiante>
+
+@{
+    ViewData["Title"] = "Estudiantes";
+}
+
+<h1>Estudiantes</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>CI</th>
+            <th>Nombre Completo</th>
+            <th>Correo</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+            <th>Carrera</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var estudiante in Model)
+        {
+            <tr>
+                <td>@estudiante.Id</td>
+                <td>@estudiante.CI</td>
+                <td>@estudiante.NombreCompleto</td>
+                <td>@estudiante.Correo</td>
+                <td>@estudiante.Telefono</td>
+                <td>@estudiante.Direccion</td>
+                <td>@estudiante.Carrera</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@estudiante.Id" class="btn btn-warning">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@estudiante.Id" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Crear Nuevo Estudiante</a>
+<a asp-action="Index" asp-controller="Docente" class="btn btn-secondary">Volver Atrás</a>

@@ -1,0 +1,41 @@
+@using Microsoft.AspNetCore.Identity
+
+@model IEnumerable<pf_final_ds2.Models.Asistencia>
+
+@{
+    ViewData["Title"] = "Asistencias";
+}
+
+<h1>Asistencias</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Estudiante</th>
+            <th>Materia</th>
+            <th>Fecha</th>
+            <th>Asistió</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var asistencia in Model)
+        {
+            <tr>
+                <td>@asistencia.Id</td>
+                <td>@asistencia.Inscripcion?.Estudiante?.NombreCompleto</td>
+                <td>@asistencia.Inscripcion?.Materia?.Nombre</td>
+                <td>@asistencia.Fecha.ToShortDateString()</td>
+                <td>@(asistencia.Asistio ? "Sí" : "No")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@asistencia.Id" class="btn btn-warning">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@asistencia.Id" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Nueva Asistencia</a>
+<a asp-action="Index" asp-controller="Docente" class="btn btn-secondary">Volver</a>

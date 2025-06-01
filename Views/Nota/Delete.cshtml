@@ -1,0 +1,33 @@
+@model pf_final_ds2.Models.Nota
+
+@{
+    ViewData["Title"] = "Eliminar Nota";
+}
+
+<h1>Eliminar Nota</h1>
+
+<div>
+    <h4>¿Está seguro de que desea eliminar esta nota?</h4>
+    <div>
+        <dl class="row">
+            <dt class="col-sm-2">Estudiante</dt>
+            <dd class="col-sm-10">@Model.Inscripcion?.Estudiante?.NombreCompleto</dd>
+            <dt class="col-sm-2">Materia</dt>
+            <dd class="col-sm-10">@Model.Inscripcion?.Materia?.Nombre</dd>
+            <dt class="col-sm-2">Parcial 1</dt>
+            <dd class="col-sm-10">@Model.Parcial1</dd>
+            <dt class="col-sm-2">Parcial 2</dt>
+            <dd class="col-sm-10">@Model.Parcial2</dd>
+            <dt class="col-sm-2">Examen Final</dt>
+            <dd class="col-sm-10">@Model.ExamenFinal</dd>
+            <dt class="col-sm-2">Nota Final</dt>
+            <dd class="col-sm-10">@Model.NotaFinal</dd>
+        </dl>
+    </div>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

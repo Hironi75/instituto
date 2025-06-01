@@ -1,0 +1,271 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = pf_final_ds2
+build_property.RootNamespace = pf_final_ds2
+build_property.ProjectDir = C:\ESTUDIANTE\SI2\Cristian\pf_final_ds2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\ESTUDIANTE\SI2\Cristian\pf_final_ds2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Admin/Reportes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUmVwb3J0ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/AsignacionDo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpZ25hY2lvbkRvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/AsignacionDo/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpZ25hY2lvbkRvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/AsignacionDo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpZ25hY2lvbkRvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/AsignacionDo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpZ25hY2lvbkRvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Asignacion/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpZ25hY2lvblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Asignacion/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpZ25hY2lvblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Asignacion/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpZ25hY2lvblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Asignacion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpZ25hY2lvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/AsistenciaDo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYURvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/AsistenciaDo/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYURvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/AsistenciaDo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYURvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/AsistenciaDo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYURvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Asistencia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Asistencia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Asistencia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Asistencia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNpc3RlbmNpYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Certificado/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Certificado/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Certificado/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Certificado/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGlmaWNhZG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Docente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/EstudianteDo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZURvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/EstudianteDo/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZURvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/EstudianteDo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZURvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/EstudianteDo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZURvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Estudiante/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Estudiante/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Estudiante/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Estudiante/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0dWRpYW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Inscripcion/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpcGNpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Inscripcion/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpcGNpb25cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Inscripcion/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpcGNpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Inscripcion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zY3JpcGNpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Materia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Materia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Materia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Materia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/NotaDo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YURvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/NotaDo/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YURvXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/NotaDo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YURvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/NotaDo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YURvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Nota/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Nota/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Nota/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Nota/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Semestre/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VtZXN0cmVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Semestre/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VtZXN0cmVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Semestre/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VtZXN0cmVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Semestre/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VtZXN0cmVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Usuario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Usuario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Usuario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Usuario/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ESTUDIANTE/SI2/Cristian/pf_final_ds2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-e55cj5rm00

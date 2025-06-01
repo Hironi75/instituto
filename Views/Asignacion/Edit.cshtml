@@ -1,0 +1,22 @@
+@model pf_final_ds2.Models.Asignacion
+
+@{
+    ViewData["Title"] = "Editar Asignacion";
+}
+
+<h1>Editar Asignación</h1>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="DocenteId" class="control-label">Docente</label>
+        <select asp-for="DocenteId" asp-items="@(new SelectList(ViewData["Docentes"] as IEnumerable<pf_final_ds2.Models.Usuario>, "Id", "Nombre"))" class="form-control"></select>
+        <span asp-validation-for="DocenteId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MateriaId" class="control-label">Materia</label>
+        <select asp-for="MateriaId" asp-items="@(new SelectList(ViewData["Materias"] as IEnumerable<pf_final_ds2.Models.Materia>, "Id", "Nombre"))" class="form-control"></select>
+        <span asp-validation-for="MateriaId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

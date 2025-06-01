@@ -1,0 +1,35 @@
+@model pf_final_ds2.Models.Usuario
+
+@{
+    ViewData["Title"] = "Editar Usuario";
+}
+
+<h1>Editar Usuario</h1>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="Nombre" class="control-label">Nombre</label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Correo" class="control-label">Correo</label>
+        <input asp-for="Correo" class="form-control" type="email" />
+        <span asp-validation-for="Correo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Telefono" class="control-label">Teléfono</label>
+        <input asp-for="Telefono" class="form-control" />
+        <span asp-validation-for="Telefono" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Tipo" class="control-label">Tipo</label>
+        <select asp-for="Tipo" class="form-control">
+            <option value="Administrador">Administrador</option>
+            <option value="Docente">Docente</option>
+        </select>
+        <span asp-validation-for="Tipo" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

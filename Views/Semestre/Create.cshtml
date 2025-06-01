@@ -1,0 +1,31 @@
+@model pf_final_ds2.Models.Semestre
+
+@{
+    ViewData["Title"] = "Crear Semestre";
+}
+
+<h1>Crear Semestre</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Nombre" class="control-label"></label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Anio" class="control-label"></label>
+        <input asp-for="Anio" class="form-control" type="number" />
+        <span asp-validation-for="Anio" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FechaInicio" class="control-label"></label>
+        <input asp-for="FechaInicio" class="form-control" type="date" />
+        <span asp-validation-for="FechaInicio" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FechaFin" class="control-label"></label>
+        <input asp-for="FechaFin" class="form-control" type="date" />
+        <span asp-validation-for="FechaFin" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

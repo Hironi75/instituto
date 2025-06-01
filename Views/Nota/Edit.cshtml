@@ -1,0 +1,32 @@
+@model pf_final_ds2.Models.Nota
+
+@{
+    ViewData["Title"] = "Editar Nota";
+}
+
+<h1>Editar Nota</h1>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="InscripcionId" class="control-label">Inscripción</label>
+        <select asp-for="InscripcionId" asp-items="@(new SelectList(ViewData["Inscripciones"] as IEnumerable<pf_final_ds2.Models.Inscripcion>, "Id", "Estudiante.NombreCompleto"))" class="form-control"></select>
+        <span asp-validation-for="InscripcionId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Parcial1" class="control-label">Parcial 1</label>
+        <input asp-for="Parcial1" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="Parcial1" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Parcial2" class="control-label">Parcial 2</label>
+        <input asp-for="Parcial2" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="Parcial2" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ExamenFinal" class="control-label">Examen Final</label>
+        <input asp-for="ExamenFinal" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="ExamenFinal" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>

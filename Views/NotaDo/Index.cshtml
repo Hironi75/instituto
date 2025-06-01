@@ -1,0 +1,43 @@
+@model IEnumerable<pf_final_ds2.Models.Nota>
+
+@{
+    ViewData["Title"] = "Notas";
+}
+
+<h1>Notas</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Estudiante</th>
+            <th>Materia</th>
+            <th>Parcial 1</th>
+            <th>Parcial 2</th>
+            <th>Examen Final</th>
+            <th>Nota Final</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var nota in Model)
+        {
+            <tr>
+                <td>@nota.Id</td>
+                <td>@nota.Inscripcion?.Estudiante?.NombreCompleto</td>
+                <td>@nota.Inscripcion?.Materia?.Nombre</td>
+                <td>@nota.Parcial1</td>
+                <td>@nota.Parcial2</td>
+                <td>@nota.ExamenFinal</td>
+                <td>@nota.NotaFinal</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@nota.Id" class="btn btn-warning">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@nota.Id" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Nueva Nota</a>
+<a asp-action="Index" asp-controller="Docente" class="btn btn-secondary">Volver Atrás</a>

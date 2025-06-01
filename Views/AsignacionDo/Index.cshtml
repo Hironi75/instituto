@@ -1,0 +1,35 @@
+@model IEnumerable<pf_final_ds2.Models.Asignacion>
+
+@{
+    ViewData["Title"] = "Asignaciones";
+}
+
+<h1>Asignaciones</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Docente</th>
+            <th>Materia</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var asignacion in Model)
+        {
+            <tr>
+                <td>@asignacion.Id</td>
+                <td>@asignacion.Docente?.Nombre</td>
+                <td>@asignacion.Materia?.Nombre</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@asignacion.Id" class="btn btn-warning">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@asignacion.Id" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Nueva Asignación</a>
+<a asp-action="Index" asp-controller="Docente" class="btn btn-secondary">Volver Atrás</a>

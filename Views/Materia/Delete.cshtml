@@ -1,0 +1,29 @@
+@model pf_final_ds2.Models.Materia
+
+@{
+    ViewData["Title"] = "Eliminar Materia";
+}
+
+<h1>Eliminar Materia</h1>
+
+<div>
+    <h4>¿Está seguro de que desea eliminar esta materia?</h4>
+    <div>
+        <dl class="row">
+            <dt class="col-sm-2">Código</dt>
+            <dd class="col-sm-10">@Model.Codigo</dd>
+            <dt class="col-sm-2">Nombre</dt>
+            <dd class="col-sm-10">@Model.Nombre</dd>
+            <dt class="col-sm-2">Nivel</dt>
+            <dd class="col-sm-10">@Model.Nivel</dd>
+            <dt class="col-sm-2">Carga Horaria</dt>
+            <dd class="col-sm-10">@Model.CargaHoraria</dd>
+        </dl>
+    </div>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

@@ -1,0 +1,39 @@
+@model IEnumerable<pf_final_ds2.Models.Semestre>
+
+@{
+    ViewData["Title"] = "Semestres";
+}
+
+<h1>Semestres</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Año</th>
+            <th>Fecha Inicio</th>
+            <th>Fecha Fin</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var semestre in Model)
+        {
+            <tr>
+                <td>@semestre.Id</td>
+                <td>@semestre.Nombre</td>
+                <td>@semestre.Anio</td>
+                <td>@semestre.FechaInicio.ToShortDateString()</td>
+                <td>@semestre.FechaFin.ToShortDateString()</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@semestre.Id" class="btn btn-warning">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@semestre.Id" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Crear Nuevo Semestre</a>
+<a asp-action="Index" asp-controller="Admin" class="btn btn-secondary mt-2">Volver Atrás</a>

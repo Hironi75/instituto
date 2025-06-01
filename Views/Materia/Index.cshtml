@@ -1,0 +1,39 @@
+@model IEnumerable<pf_final_ds2.Models.Materia>
+
+@{
+    ViewData["Title"] = "Materias";
+}
+
+<h1>Materias</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Nivel</th>
+            <th>Carga Horaria</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var materia in Model)
+        {
+            <tr>
+                <td>@materia.Id</td>
+                <td>@materia.Codigo</td>
+                <td>@materia.Nombre</td>
+                <td>@materia.Nivel</td>
+                <td>@materia.CargaHoraria</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@materia.Id" class="btn btn-warning">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@materia.Id" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Crear Nueva Materia</a>
+<a asp-action="Index" asp-controller="Admin" class="btn btn-secondary mt-2">Volver</a>

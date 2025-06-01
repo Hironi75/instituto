@@ -1,0 +1,174 @@
+@{
+    ViewData["Title"] = "Reportes";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Dashboard de Reportes</h1>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Total de Usuarios</h5>
+                    <p class="card-text display-4">@ViewData["TotalUsuarios"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Total de Estudiantes</h5>
+                    <p class="card-text display-4">@ViewData["TotalEstudiantes"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Total de Materias</h5>
+                    <p class="card-text display-4">@ViewData["TotalMaterias"]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Total de Inscripciones</h5>
+                    <p class="card-text display-4">@ViewData["TotalInscripciones"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Total de Notas</h5>
+                    <p class="card-text display-4">@ViewData["TotalNotas"]</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Total de Asistencias</h5>
+                    <p class="card-text display-4">@ViewData["TotalAsistencias"]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 mb-5">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Gráficos del Dashboard</h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <canvas id="dashboardPieChart"></canvas>
+                        </div>
+                        <div class="col-md-4">
+                            <canvas id="dashboardBarChart"></canvas>
+                        </div>
+                        <div class="col-md-4">
+                            <canvas id="dashboardLineChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 text-center mt-3">
+            <a href="javascript:history.back()" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Volver Atrás
+            </a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const pieLabels = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewData["DashboardPieLabels"]));
+        const pieData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewData["DashboardPieData"]));
+        // Pie
+        new Chart(document.getElementById('dashboardPieChart').getContext('2d'), {
+            type: 'pie',
+            data: {
+                labels: pieLabels,
+                datasets: [{
+                    data: pieData,
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(255, 205, 86, 0.7)',
+                        'rgba(153, 102, 255, 0.7)',
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 159, 64, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(255, 205, 86, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { position: 'bottom' },
+                    title: { display: false }
+                }
+            }
+        });
+        // Bar
+        new Chart(document.getElementById('dashboardBarChart').getContext('2d'), {
+            type: 'bar',
+            data: {
+                labels: pieLabels,
+                datasets: [{
+                    label: 'Cantidad',
+                    data: pieData,
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false },
+                    title: { display: false }
+                },
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+        // Line
+        new Chart(document.getElementById('dashboardLineChart').getContext('2d'), {
+            type: 'line',
+            data: {
+                labels: pieLabels,
+                datasets: [{
+                    label: 'Cantidad',
+                    data: pieData,
+                    fill: false,
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    tension: 0.1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false },
+                    title: { display: false }
+                },
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+    </script>
+}

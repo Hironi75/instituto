@@ -1,0 +1,38 @@
+@model pf_final_ds2.Models.Inscripcion
+
+@{
+    ViewData["Title"] = "Nueva Inscripción";
+}
+
+<h1>Nueva Inscripción</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="EstudianteId" class="control-label">Estudiante</label>
+        <select asp-for="EstudianteId" class="form-control" asp-items="@(new SelectList(ViewData["Estudiantes"] as List<pf_final_ds2.Models.Estudiante>, "Id", "NombreCompleto"))">
+            <option value="">Seleccione un estudiante</option>
+        </select>
+        <span asp-validation-for="EstudianteId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MateriaId" class="control-label">Materia</label>
+        <select asp-for="MateriaId" class="form-control" asp-items="@(new SelectList(ViewData["Materias"] as List<pf_final_ds2.Models.Materia>, "Id", "Nombre"))">
+            <option value="">Seleccione una materia</option>
+        </select>
+        <span asp-validation-for="MateriaId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SemestreId" class="control-label">Semestre</label>
+        <select asp-for="SemestreId" class="form-control" asp-items="@(new SelectList(ViewData["Semestres"] as List<pf_final_ds2.Models.Semestre>, "Id", "Nombre"))">
+            <option value="">Seleccione un semestre</option>
+        </select>
+        <span asp-validation-for="SemestreId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FechaInscripcion" class="control-label"></label>
+        <input asp-for="FechaInscripcion" class="form-control" type="date" />
+        <span asp-validation-for="FechaInscripcion" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+<a asp-action="Index" class="btn btn-secondary mt-2">Volver</a>

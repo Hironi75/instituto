@@ -1,0 +1,39 @@
+@model IEnumerable<pf_final_ds2.Models.Usuario>
+
+@{
+    ViewData["Title"] = "Usuarios";
+}
+
+<h1>Usuarios</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Telefono</th>
+            <th>Tipo</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var usuario in Model)
+        {
+            <tr>
+                <td>@usuario.Id</td>
+                <td>@usuario.Nombre</td>
+                <td>@usuario.Correo</td>
+                <td>@usuario.Telefono</td>
+                <td>@usuario.Tipo</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@usuario.Id" class="btn btn-warning">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@usuario.Id" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Create" class="btn btn-primary">Crear Nuevo Usuario</a>
+<a asp-action="Index" asp-controller="Admin" class="btn btn-secondary">Volver Atrás</a>

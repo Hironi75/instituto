@@ -1,0 +1,29 @@
+@model pf_final_ds2.Models.Asistencia
+
+@{
+    ViewData["Title"] = "Eliminar Asistencia";
+}
+
+<h1>Eliminar Asistencia</h1>
+
+<div>
+    <h4>¿Está seguro de que desea eliminar esta asistencia?</h4>
+    <div>
+        <dl class="row">
+            <dt class="col-sm-2">Estudiante</dt>
+            <dd class="col-sm-10">@Model.Inscripcion?.Estudiante?.NombreCompleto</dd>
+            <dt class="col-sm-2">Materia</dt>
+            <dd class="col-sm-10">@Model.Inscripcion?.Materia?.Nombre</dd>
+            <dt class="col-sm-2">Fecha</dt>
+            <dd class="col-sm-10">@Model.Fecha.ToShortDateString()</dd>
+            <dt class="col-sm-2">Asistió</dt>
+            <dd class="col-sm-10">@(Model.Asistio ? "Sí" : "No")</dd>
+        </dl>
+    </div>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Eliminar</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

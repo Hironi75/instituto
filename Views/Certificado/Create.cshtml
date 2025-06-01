@@ -1,0 +1,31 @@
+@model pf_final_ds2.Models.Certificado
+
+@{
+    ViewData["Title"] = "Nuevo Certificado";
+}
+
+<h1>Nuevo Certificado</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="EstudianteId" class="control-label">Estudiante</label>
+        <select asp-for="EstudianteId" class="form-control" asp-items="@(new SelectList(ViewData["Estudiantes"] as List<pf_final_ds2.Models.Estudiante>, "Id", "NombreCompleto"))">
+            <option value="">Seleccione un estudiante</option>
+        </select>
+        <span asp-validation-for="EstudianteId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SemestreId" class="control-label">Semestre</label>
+        <select asp-for="SemestreId" class="form-control" asp-items="@(new SelectList(ViewData["Semestres"] as List<pf_final_ds2.Models.Semestre>, "Id", "Nombre"))">
+            <option value="">Seleccione un semestre</option>
+        </select>
+        <span asp-validation-for="SemestreId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Documento" class="control-label"></label>
+        <textarea asp-for="Documento" class="form-control"></textarea>
+        <span asp-validation-for="Documento" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+<a asp-action="Index" class="btn btn-secondary mt-2">Volver Atrás</a>

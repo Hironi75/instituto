@@ -1,0 +1,29 @@
+@model pf_final_ds2.Models.Asistencia
+
+@{
+    ViewData["Title"] = "Nueva Asistencia";
+}
+
+<h1>Nueva Asistencia</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="InscripcionId" class="control-label">Inscripción</label>
+        <select asp-for="InscripcionId" class="form-control" asp-items="@(new SelectList(ViewData["Inscripciones"] as List<pf_final_ds2.Models.Inscripcion>, "Id", "Estudiante.NombreCompleto"))">
+            <option value="">Seleccione una inscripción</option>
+        </select>
+        <span asp-validation-for="InscripcionId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Fecha" class="control-label"></label>
+        <input asp-for="Fecha" class="form-control" type="date" />
+        <span asp-validation-for="Fecha" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Asistio" class="control-label"></label>
+        <input asp-for="Asistio" class="form-check-input" type="checkbox" />
+        <span asp-validation-for="Asistio" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+<a asp-action="Index" class="btn btn-secondary mt-2">Atrás</a>

@@ -1,0 +1,35 @@
+@model pf_final_ds2.Models.Nota
+
+@{
+    ViewData["Title"] = "Nueva Nota";
+}
+
+<h1>Nueva Nota</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="InscripcionId" class="control-label">Inscripción</label>
+        <select asp-for="InscripcionId" class="form-control"
+            asp-items="@(new SelectList(ViewData["Inscripciones"] as List<pf_final_ds2.Models.Inscripcion>, "Id", "Estudiante.NombreCompleto"))">
+            <option value="">Seleccione una inscripción</option>
+        </select>
+        <span asp-validation-for="InscripcionId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Parcial1" class="control-label"></label>
+        <input asp-for="Parcial1" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="Parcial1" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Parcial2" class="control-label"></label>
+        <input asp-for="Parcial2" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="Parcial2" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ExamenFinal" class="control-label"></label>
+        <input asp-for="ExamenFinal" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="ExamenFinal" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+<a asp-action="Index" class="btn btn-secondary mt-2">Volver atrás</a>

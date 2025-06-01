@@ -1,0 +1,17 @@
+@model pf_final_ds2.Models.Semestre
+
+@{
+    ViewData["Title"] = "Editar Semestre";
+}
+
+<h1>Editar Semestre</h1>
+
+<form asp-action="Edit" method="post">
+    <div class="form-group">
+        <label asp-for="Nombre" class="control-label">Nombre</label>
+        <input asp-for="Nombre" class="form-control" />
+        <span asp-validation-for="Nombre" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
