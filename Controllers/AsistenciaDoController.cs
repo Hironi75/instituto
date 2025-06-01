@@ -43,7 +43,9 @@ namespace pf_final_ds2.Controllers
 
         public IActionResult Create()
         {
-            CargarInscripcionesYMaterias();
+            ViewData["Inscripciones"] = _context.Inscripciones
+                .Include(i => i.Estudiante!)
+                .ToList();
             return View();
         }
 
@@ -57,7 +59,9 @@ namespace pf_final_ds2.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            CargarInscripcionesYMaterias();
+            ViewData["Inscripciones"] = _context.Inscripciones
+                .Include(i => i.Estudiante!)
+                .ToList();
             return View(asistencia);
         }
 
