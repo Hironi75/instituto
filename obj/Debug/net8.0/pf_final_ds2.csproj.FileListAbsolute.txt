@@ -125,3 +125,4 @@ C:\ESTUDIANTE\SI2\Cristian\pf_final_ds2\bin\Debug\net8.0\runtimes\win-x86\native
 C:\ESTUDIANTE\SI2\Cristian\pf_final_ds2\bin\Debug\net8.0\runtimes\win-x86\native\libstdc++-6.dll
 C:\ESTUDIANTE\SI2\Cristian\pf_final_ds2\bin\Debug\net8.0\runtimes\win-x86\native\libwinpthread-1.dll
 C:\ESTUDIANTE\SI2\Cristian\pf_final_ds2\bin\Debug\net8.0\runtimes\win-x86\native\qpdf.dll
+C:\ESTUDIANTE\SI2\Cristian\pf_final_ds2\obj\Debug\net8.0\pf_final_ds2.sourcelink.json
